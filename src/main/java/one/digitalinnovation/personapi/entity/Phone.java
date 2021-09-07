@@ -7,13 +7,14 @@ import lombok.NoArgsConstructor;
 import one.digitalinnovation.personapi.enums.PhoneType;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Phone {
+public class Phone implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
