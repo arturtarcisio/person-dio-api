@@ -21,14 +21,18 @@ public class PersonDTO {
 
     @NotEmpty
     @Size(min = 2, max = 100)
+    @Valid
     private String firstName;
 
     @NotEmpty
     @Size(min = 2, max = 100)
+    @Valid
     private String lastName;
 
     @NotEmpty
     @CPF
+    @Size(min = 11, max = 11)
+    @Valid
     private String cpf;
 
     private String birthDate;
